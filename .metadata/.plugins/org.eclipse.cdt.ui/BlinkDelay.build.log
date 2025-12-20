@@ -1,0 +1,16 @@
+14:32:33 **** Build of configuration Debug for project BlinkDelay ****
+make -j12 all 
+arm-none-eabi-gcc -o "BlinkDelay.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded Programming\STMCube_IDE\STM32_Tutorial_CubeIDE\BlinkDelay\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="BlinkDelay.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: BlinkDelay.elf
+ 
+arm-none-eabi-size  BlinkDelay.elf 
+arm-none-eabi-objdump -h -S BlinkDelay.elf  > "BlinkDelay.list"
+   text	   data	    bss	    dec	    hex	filename
+   4688	     12	   1572	   6272	   1880	BlinkDelay.elf
+Finished building: default.size.stdout
+ 
+Finished building: BlinkDelay.list
+ 
+
+14:32:33 Build Finished. 0 errors, 0 warnings. (took 581ms)
+

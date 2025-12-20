@@ -1,0 +1,10 @@
+14:34:12 **** Build of configuration Debug for project BlinkSysTick ****
+make -j12 all 
+arm-none-eabi-size  BlinkSysTick.elf 
+   text	   data	    bss	    dec	    hex	filename
+   4640	     12	   1572	   6224	   1850	BlinkSysTick.elf
+Finished building: default.size.stdout
+ 
+
+14:34:13 Build Finished. 0 errors, 0 warnings. (took 329ms)
+
